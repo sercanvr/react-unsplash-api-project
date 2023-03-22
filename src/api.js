@@ -8,7 +8,6 @@ const searchImages = async term => {
       query: term,
     },
   });
-  debugger;
   return response.data.results;
 };
 

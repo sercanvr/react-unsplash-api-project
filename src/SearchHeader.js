@@ -6,11 +6,9 @@ function SearchHeader({search}) {
 const [valueInput, setValue] = useState('')
 
   const handleFormSubmit = (event) => {
-    debugger;
     event.preventDefault();
     search(valueInput);
 };
-
 
 const handleChange = (event) => {
     setValue(event.target.value)
@@ -20,7 +18,7 @@ const handleChange = (event) => {
     <div className="searchDiv">
       <form onSubmit={handleFormSubmit}>
         <label htmlFor="search">
-          <h2>Unsplash.API</h2>
+          <h1><a href='https://unsplash.com' rel="noreferrer" target="_blank">Unsplash.API</a></h1>
         </label>
         <div className='searchIcon'>
           <FontAwesomeIcon  className='searchLogo' icon={faSearch} color="hsl(0, 0%, 58%)" />
